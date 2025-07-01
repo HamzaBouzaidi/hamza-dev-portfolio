@@ -1,0 +1,84 @@
+body {
+  background-color: #0a192f;
+  color: #ccd6f6; /* optional: makes text brighter */
+  margin: 0; /* removes default margin */
+  font-family: 'Times New Roman', Times, serif /* optional: cleaner look */
+  
+}
+
+.MyName {
+    color: rgb(226, 232, 240);
+    font-weight: 700;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    cursor: pointer;
+    margin-left: 16px;
+    margin-right: 16px;
+    transition: color 1s , opacity 1s;
+     
+}
+
+.MyName:hover{
+    color: rgb(36, 77, 143);
+}
+.MyName:active {
+    opacity: 0.7;
+}
+
+
+.Position{
+     color: rgb(226, 232, 240);
+    font-weight: 500;
+    font-size: 7px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    cursor: pointer;
+    margin-left: 16px;
+    margin-right: 16px;
+    transition: color 1s , opacity 1s;
+   
+}
+
+.Position:hover{
+color: rgb(36, 77, 143);
+
+}
+.Position:active{
+  opacity: 0.7;
+
+}
+.My-Bio{
+     color: rgb(148, 163, 184);
+     font-weight: 500;
+    font-size: 5px;
+    width: 100px;
+    line-height: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    line-height: 10px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.Introduction{
+    color: rgb(148, 163, 184);
+    font-size: 5px;
+    text-indent: 10px;
+    font-weight: 500;
+    width: 250px;
+     font-family: 'Times New Roman', Times, serif;
+     margin-right: 15px;
+      
+     
+    
+}
+
+
+.Container{
+ display: flex;
+ gap: 150px;
+ justify-content: right;
+
+}
