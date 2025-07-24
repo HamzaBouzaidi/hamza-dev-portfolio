@@ -54,25 +54,48 @@ color: rgb(36, 77, 143);
      color: rgb(148, 163, 184);
      margin-left: 450px;
     margin-right: 30px;
-  
+margin-bottom: 80px;  
 }
 
-.Introduction{
-    color: rgb(148, 163, 184);
-    margin-left: 40%;
-    margin-right: 10%;
-     
 
+.Rightpart{
+  font-size: 19px;
+     
+     margin-left: 10%;
+    margin-right: 10%;
+    
     
 }
 
+.Introduction1{
+  color: #94A3B8;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
 
+.Introduction2{
+  color: #94A3B8;
+line-height: 30px;
+  margin-bottom: 10px;
+}
 
+.Introduction3{
+  color: #94A3B8;
+  line-height: 30px;
+  margin-bottom: 10px; 
+}
+
+.Introduction4{
+  color: #94A3B8;
+line-height: 30px;
+  margin-bottom: 10px; 
+
+}
 .Container{
     
  display: flex;
- gap: 10px;
- justify-content: right;
+ gap: 0px;
+ justify-content: center;
  margin-top: 45px;
 
 }
@@ -93,6 +116,12 @@ display: flex;
 justify-content: center ;
 gap: 10px;
 margin-right: 40vw;
+margin-left: 30vw;
+ top: 30%;
+position: fixed;
+flex-direction: row;
+z-index: 1000;
+
 }
 
 
@@ -111,4 +140,53 @@ transition: transform 0.3s;
 a i:hover {
 transition: scale(1.3);
 
+}
+.LocalButtons{
+font-size: 10px;
+margin-left: 450px;
+font-weight: bold ;
+letter-spacing: 1.5px;
+line-height: 40px;
+
+}
+.LocalButtons:hover{
+color: #e2ebf0;
+
+}
+
+.FirstLocalButton:hover{
+color: #e2ebf0;
+  
+}
+
+.SecondLocalbutton:hover{
+  color: #e2ebf0;
+}
+.ThirdLocalButton:hover{
+  color: #e2ebf0;
+}
+
+.LocalButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.LocalButtons::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  width: 20px;
+  height: 2px;
+  background-color: #e2ebf0;
+  transition: width 0.3s ease;
+}
+
+.LocalButtons:hover::before {
+  width: 40px;
+}
+
+.LocalButtons:hover {
+  transform: translateX(20px); /* push the whole button */
 }
