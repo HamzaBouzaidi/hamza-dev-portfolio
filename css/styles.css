@@ -13,7 +13,7 @@
     
     font-size: 50px;
     cursor: pointer;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-right: 30px;
     
     width: 450px;
@@ -34,7 +34,7 @@
 .Position{
      color: rgb(226, 232, 240);
     cursor: pointer;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-right: 30px;
     
     width: 300px;
@@ -52,7 +52,7 @@ color: rgb(36, 77, 143);
 }
 .My-Bio{
      color: rgb(148, 163, 184);
-     margin-left: 250px;
+     margin-left: 200px;
     margin-right: 30px;
 margin-bottom: 80px;  
 }
@@ -73,25 +73,25 @@ margin-bottom: 80px;
 .Introduction1{
   color: #94A3B8;
   line-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .Introduction2{
   color: #94A3B8;
 line-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .Introduction3{
   color: #94A3B8;
   line-height: 30px;
-  margin-bottom: 10px; 
+  margin-bottom: 50px; 
 }
 
 .Introduction4{
   color: #94A3B8;
 line-height: 30px;
-  margin-bottom: 10px; 
+  margin-bottom: 50px; 
 
 }
 .Container{
@@ -162,3 +162,34 @@ color: #e2ebf0;
   line-height: 30px;
   margin-bottom: 10px;
 }
+.FirstProject:hover {
+  background-color: rgba(255, 255, 255, 0.05); /* light square effect */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* optional soft glow */
+  cursor: pointer;
+}
+
+
+.SecondProject {
+  color: #94A3B8;
+  line-height: 30px;
+}
+
+.ProjectDescription1 {
+  color: #94A3B8;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.ProjectTags span {
+  --tw-bg-opacity: 0.2;
+background-color: rgb(94 234 212 / var(--tw-bg-opacity));
+
+  color: #e2e8f0;
+  padding: 4px 10px;
+  margin-right: 6px;
+  border-radius: 5px;
+  font-size: 20x;
+  display: inline-block;
+  margin-bottom: 50PX;
+}
+
