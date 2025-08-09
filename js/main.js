@@ -1,16 +1,12 @@
-console.log('hello world');
-function scrollToProjects(){
+let circle = document.querySelector('.cursorFollower');
+let circleSize = 700;
+let cursorx= 0;
+let cursory = 0;
+let speed = 0.5;
 
-    const target    = document.getElementById('projects')
-      if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
-  }
-
-
-}
-function scrollToProjects1(){
-  const target1 = document.getElementById('about')
-  if (target){
-    target.scrollIntoView({ behavior: "smooth" });
-  }
-}
+document.addEventListener('mousemove', (e) => {
+  cursorx = e.clientX ;
+  cursory = e.clientY ;
+    circle.style.left = cursorx - circleSize / 2 + 'px';
+    circle.style.top = cursory - circleSize / 2 + 'px';
+});
