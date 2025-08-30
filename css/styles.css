@@ -225,20 +225,57 @@ background-color: rgb(94 234 212 / var(--tw-bg-opacity));
   
 }
 
-/* --- Mobile Layout --- */
-@media (max-width: 768px) {
+/* --------------------- Responsive Layout --------------------- */
+
+/* Tablets & smaller desktops */
+@media (max-width: 1024px) {
   .Container {
-    display: block;      /* no flex split */
-    margin: 0;
-    padding: 0 15px;     /* some side padding */
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
   }
 
   .Leftpart {
-    position: relative;  /* not fixed */
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .MyName, .Position, .My-Bio, .LocalButtons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .Rightpart {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .Introduction1, .Introduction2, .Introduction3, .Introduction4,
+  .ProjectDescription, .ProjectDescription1, .ProjectTags span {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .Container {
+    display: block;       /* stack everything vertically */
+    margin: 0;
+    padding: 0 15px;
+  }
+
+  .Leftpart {
+    position: relative;
     width: 100%;
     margin: 0;
     padding: 20px 0;
-    text-align: center;  /* center text */
+    text-align: center;
   }
 
   .MyName {
@@ -257,23 +294,25 @@ background-color: rgb(94 234 212 / var(--tw-bg-opacity));
     line-height: 1.5;
   }
 
-  /* Social icons under bio */
+  /* Social icons below bio, horizontal row */
   .Githublinkedin {
-    position: relative;   /* no fixed bottom */
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-bottom: 30px;
   }
 
-  /* Right part becomes the main content */
+  .Githublinkedin a i {
+    font-size: 25px;
+  }
+
   .Rightpart {
     margin: 0;
     width: 100%;
     padding: 0;
   }
 
-  /* About + Projects + etc. stack vertically */
   .Introduction1, .Introduction2, .Introduction3, .Introduction4,
   .ProjectDescription, .ProjectDescription1 {
     width: 100%;
@@ -282,16 +321,34 @@ background-color: rgb(94 234 212 / var(--tw-bg-opacity));
     line-height: 1.6;
   }
 
-  /* Tags look neat */
   .ProjectTags span {
     font-size: 12px;
     padding: 3px 6px;
     margin: 3px;
   }
 
-  /* Hide fancy cursor follower on phones */
+  /* Hide cursor follower on mobile */
   .cursorFollower {
     display: none;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .MyName {
+    font-size: 24px;
+  }
+
+  .Position {
+    font-size: 16px;
+  }
+
+  .My-Bio {
+    font-size: 13px;
+  }
+
+  .Rightpart {
+    font-size: 13px;
   }
 }
 
