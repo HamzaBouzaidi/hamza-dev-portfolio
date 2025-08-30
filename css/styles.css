@@ -224,3 +224,74 @@ background-color: rgb(94 234 212 / var(--tw-bg-opacity));
   opacity: 0.1;
   
 }
+
+/* --- Mobile Layout --- */
+@media (max-width: 768px) {
+  .Container {
+    display: block;      /* no flex split */
+    margin: 0;
+    padding: 0 15px;     /* some side padding */
+  }
+
+  .Leftpart {
+    position: relative;  /* not fixed */
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;  /* center text */
+  }
+
+  .MyName {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .Position {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .My-Bio {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  /* Social icons under bio */
+  .Githublinkedin {
+    position: relative;   /* no fixed bottom */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  /* Right part becomes the main content */
+  .Rightpart {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  /* About + Projects + etc. stack vertically */
+  .Introduction1, .Introduction2, .Introduction3, .Introduction4,
+  .ProjectDescription, .ProjectDescription1 {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Tags look neat */
+  .ProjectTags span {
+    font-size: 12px;
+    padding: 3px 6px;
+    margin: 3px;
+  }
+
+  /* Hide fancy cursor follower on phones */
+  .cursorFollower {
+    display: none;
+  }
+}
+
